@@ -1,0 +1,540 @@
+2026-04-14 15:20:25,399 [ERROR] __main__: ❌ Kutilmagan xatolik: TELEGRAM_BOT_TOKEN .env faylda topilmadi.
+Traceback (most recent call last):
+  File "/home/jenetteg/Desktop/xizmat_bot/app.py", line 218, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/app.py", line 186, in main
+    validate_env()
+  File "/home/jenetteg/Desktop/xizmat_bot/app.py", line 60, in validate_env
+    raise ValueError("TELEGRAM_BOT_TOKEN .env faylda topilmadi.")
+ValueError: TELEGRAM_BOT_TOKEN .env faylda topilmadi.
+2026-04-14 15:22:11,698 [ERROR] __main__: ❌ Kutilmagan xatolik: TELEGRAM_BOT_TOKEN .env faylda topilmadi.
+Traceback (most recent call last):
+  File "/home/jenetteg/Desktop/xizmat_bot/app.py", line 218, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/app.py", line 186, in main
+    validate_env()
+  File "/home/jenetteg/Desktop/xizmat_bot/app.py", line 60, in validate_env
+    raise ValueError("TELEGRAM_BOT_TOKEN .env faylda topilmadi.")
+ValueError: TELEGRAM_BOT_TOKEN .env faylda topilmadi.
+2026-04-14 15:24:43,923 [INFO] __main__: ✅ Gemini client tayyor
+2026-04-14 15:24:44,292 [INFO] __main__: 🚀 Bot polling boshlandi...
+2026-04-14 15:24:44,292 [INFO] aiogram.dispatcher: Start polling
+2026-04-14 15:24:44,392 [INFO] aiogram.dispatcher: Run polling for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 15:24:56,539 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 15:24:57,418 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-14 15:24:57,541 [INFO] aiogram.event: Update id=34750337 is handled. Duration 1296 ms by bot id=8628385358
+2026-04-14 15:25:04,831 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 15:25:23,450 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-14 15:25:23,781 [INFO] aiogram.event: Update id=34750338 is handled. Duration 19065 ms by bot id=8628385358
+2026-04-14 15:25:23,845 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 15:25:32,385 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-14 15:25:32,519 [INFO] aiogram.event: Update id=34750339 is handled. Duration 8972 ms by bot id=8628385358
+2026-04-14 15:25:42,411 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 15:25:46,219 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-14 15:25:46,340 [INFO] aiogram.event: Update id=34750340 is handled. Duration 4041 ms by bot id=8628385358
+2026-04-14 15:30:26,005 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 15:30:30,212 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 200 OK"
+2026-04-14 15:30:30,333 [INFO] aiogram.event: Update id=34750341 is handled. Duration 4658 ms by bot id=8628385358
+2026-04-14 15:30:30,526 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 15:30:31,087 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-14 15:30:31,089 [ERROR] __main__: Gemini bilan ishlashda xatolik yuz berdi.
+Traceback (most recent call last):
+  File "/home/jenetteg/Desktop/xizmat_bot/app.py", line 72, in get_ai_response
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/models.py", line 3818, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/_api_client.py", line 1314, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/_api_client.py", line 1150, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 371, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/_api_client.py", line 1127, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/errors.py", line 110, in raise_for_response
+    raise ServerError(status_code, response_json, response)
+google.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-04-14 15:30:31,274 [INFO] aiogram.event: Update id=34750342 is handled. Duration 1060 ms by bot id=8628385358
+2026-04-14 15:30:40,670 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 15:30:43,667 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-04-14 15:30:43,667 [ERROR] __main__: Gemini bilan ishlashda xatolik yuz berdi.
+Traceback (most recent call last):
+  File "/home/jenetteg/Desktop/xizmat_bot/app.py", line 72, in get_ai_response
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/models.py", line 5006, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/models.py", line 3818, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/_api_client.py", line 1314, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/_api_client.py", line 1150, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 371, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/tenacity/__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/_api_client.py", line 1127, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/google/genai/errors.py", line 110, in raise_for_response
+    raise ServerError(status_code, response_json, response)
+google.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-04-14 15:30:43,792 [INFO] aiogram.event: Update id=34750343 is handled. Duration 3232 ms by bot id=8628385358
+2026-04-14 15:31:12,323 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2026-04-14 15:31:12,324 [INFO] aiogram.dispatcher: Polling stopped for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 15:31:12,324 [INFO] aiogram.dispatcher: Polling stopped
+2026-04-14 15:48:55,015 [INFO] __main__: ✅ Ma'lumotlar bazasi tayyor
+2026-04-14 15:48:55,381 [INFO] __main__: 🚀 Bot polling boshlandi...
+2026-04-14 15:48:55,382 [INFO] aiogram.dispatcher: Start polling
+2026-04-14 15:48:55,488 [INFO] aiogram.dispatcher: Run polling for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 15:49:07,161 [INFO] aiogram.event: Update id=34750344 is handled. Duration 350 ms by bot id=8628385358
+2026-04-14 15:49:11,418 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 15:49:11,849 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-14 15:49:11,850 [ERROR] root: Gemini Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 48.20778127s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '48s'}]}}
+2026-04-14 15:49:11,979 [INFO] aiogram.event: Update id=34750345 is handled. Duration 682 ms by bot id=8628385358
+2026-04-14 15:49:16,889 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 15:49:17,220 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-14 15:49:17,221 [ERROR] root: Gemini Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 42.834229946s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '42s'}]}}
+2026-04-14 15:49:17,411 [INFO] aiogram.event: Update id=34750346 is handled. Duration 640 ms by bot id=8628385358
+2026-04-14 15:49:43,101 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 15:49:43,439 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-14 15:49:43,439 [ERROR] root: Gemini Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 16.615140334s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '16s'}]}}
+2026-04-14 15:49:43,561 [INFO] aiogram.event: Update id=34750347 is handled. Duration 775 ms by bot id=8628385358
+2026-04-14 15:49:49,312 [INFO] aiogram.event: Update id=34750348 is handled. Duration 174 ms by bot id=8628385358
+2026-04-14 16:05:18,667 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2026-04-14 16:05:18,668 [INFO] aiogram.dispatcher: Polling stopped for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 16:05:18,668 [INFO] aiogram.dispatcher: Polling stopped
+2026-04-14 16:05:25,732 [INFO] __main__: ✅ Ma'lumotlar bazasi tayyor
+2026-04-14 16:05:26,083 [INFO] __main__: 🚀 Bot polling boshlandi...
+2026-04-14 16:05:26,084 [INFO] aiogram.dispatcher: Start polling
+2026-04-14 16:05:26,181 [INFO] aiogram.dispatcher: Run polling for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 16:05:40,882 [INFO] aiogram.event: Update id=34750349 is not handled. Duration 1 ms by bot id=8628385358
+2026-04-14 16:05:52,054 [INFO] aiogram.event: Update id=34750350 is handled. Duration 332 ms by bot id=8628385358
+2026-04-14 16:05:56,987 [INFO] aiogram.event: Update id=34750351 is handled. Duration 238 ms by bot id=8628385358
+2026-04-14 16:06:03,549 [INFO] aiogram.event: Update id=34750352 is handled. Duration 206 ms by bot id=8628385358
+2026-04-14 16:06:06,280 [INFO] aiogram.event: Update id=34750353 is handled. Duration 121 ms by bot id=8628385358
+2026-04-14 16:06:10,961 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 16:06:11,291 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-14 16:06:11,291 [ERROR] root: Gemini Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 48.763916654s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '48s'}]}}
+2026-04-14 16:06:11,416 [INFO] aiogram.event: Update id=34750354 is handled. Duration 639 ms by bot id=8628385358
+2026-04-14 16:07:37,343 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2026-04-14 16:07:37,344 [INFO] aiogram.dispatcher: Polling stopped for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 16:07:37,344 [INFO] aiogram.dispatcher: Polling stopped
+2026-04-14 16:07:42,193 [INFO] __main__: ✅ Ma'lumotlar bazasi tayyor
+2026-04-14 16:07:42,566 [INFO] __main__: 🚀 Bot polling boshlandi...
+2026-04-14 16:07:42,567 [INFO] aiogram.dispatcher: Start polling
+2026-04-14 16:07:42,666 [INFO] aiogram.dispatcher: Run polling for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 16:07:49,025 [INFO] aiogram.event: Update id=34750355 is handled. Duration 329 ms by bot id=8628385358
+2026-04-14 16:07:53,816 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 16:07:54,239 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent "HTTP/1.1 429 Too Many Requests"
+2026-04-14 16:07:54,239 [ERROR] root: Gemini Error: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 5.815514417s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '5s'}]}}
+2026-04-14 16:07:54,362 [INFO] aiogram.event: Update id=34750356 is handled. Duration 664 ms by bot id=8628385358
+2026-04-14 16:15:30,754 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2026-04-14 16:15:30,754 [INFO] aiogram.dispatcher: Polling stopped for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 16:15:30,754 [INFO] aiogram.dispatcher: Polling stopped
+2026-04-14 16:19:14,563 [INFO] __main__: ✅ Ma'lumotlar bazasi tayyor
+2026-04-14 16:19:14,618 [INFO] __main__: ✅ Gemini AI ulandi
+2026-04-14 16:20:22,967 [INFO] __main__: ✅ Ma'lumotlar bazasi tayyor
+2026-04-14 16:20:23,020 [INFO] __main__: ✅ Gemini AI ulandi
+2026-04-14 16:20:23,538 [INFO] __main__: 🚀 Bot polling boshlandi...
+2026-04-14 16:20:23,538 [INFO] aiogram.dispatcher: Start polling
+2026-04-14 16:20:23,639 [INFO] aiogram.dispatcher: Run polling for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 16:20:35,851 [INFO] aiogram.event: Update id=34750357 is handled. Duration 330 ms by bot id=8628385358
+2026-04-14 16:20:39,109 [INFO] aiogram.event: Update id=34750358 is not handled. Duration 1 ms by bot id=8628385358
+2026-04-14 16:20:39,109 [ERROR] aiogram.event: Cause exception while process update id=34750358 by bot id=8628385358
+TypeError: 'Bot' object is not subscriptable
+Traceback (most recent call last):
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/middlewares/throttling.py", line 31, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/handlers/ai_handler.py", line 49, in ai_chat_handler
+    client = message.bot["gemini_client"]
+             ~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+TypeError: 'Bot' object is not subscriptable
+2026-04-14 16:22:19,973 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2026-04-14 16:22:19,973 [INFO] aiogram.dispatcher: Polling stopped for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 16:22:19,973 [INFO] aiogram.dispatcher: Polling stopped
+2026-04-14 16:22:24,109 [INFO] __main__: ✅ Ma'lumotlar bazasi tayyor
+2026-04-14 16:22:24,150 [INFO] __main__: ✅ Gemini AI ulandi
+2026-04-14 16:22:24,548 [INFO] __main__: 🚀 Bot polling boshlandi...
+2026-04-14 16:22:24,549 [INFO] aiogram.dispatcher: Start polling
+2026-04-14 16:22:24,643 [INFO] aiogram.dispatcher: Run polling for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 16:22:32,331 [INFO] aiogram.event: Update id=34750359 is handled. Duration 324 ms by bot id=8628385358
+2026-04-14 16:22:34,296 [INFO] aiogram.event: Update id=34750360 is handled. Duration 120 ms by bot id=8628385358
+2026-04-14 16:22:37,324 [INFO] aiogram.event: Update id=34750361 is handled. Duration 118 ms by bot id=8628385358
+2026-04-14 16:22:38,465 [INFO] aiogram.event: Update id=34750362 is handled. Duration 123 ms by bot id=8628385358
+2026-04-14 16:22:50,083 [INFO] aiogram.event: Update id=34750363 is handled. Duration 149 ms by bot id=8628385358
+2026-04-14 16:22:51,744 [INFO] aiogram.event: Update id=34750364 is handled. Duration 142 ms by bot id=8628385358
+2026-04-14 16:22:56,086 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 16:22:58,694 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 16:22:58,695 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:22:58,695 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:22:58,695 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:22:58,822 [INFO] aiogram.event: Update id=34750365 is handled. Duration 2845 ms by bot id=8628385358
+2026-04-14 16:23:27,093 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 16:23:39,374 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 16:23:39,375 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:23:39,375 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:23:39,375 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:23:39,496 [INFO] aiogram.event: Update id=34750366 is handled. Duration 12697 ms by bot id=8628385358
+2026-04-14 16:24:16,130 [INFO] aiogram.event: Update id=34750367 is handled. Duration 328 ms by bot id=8628385358
+2026-04-14 16:24:20,098 [INFO] aiogram.event: Update id=34750368 is handled. Duration 143 ms by bot id=8628385358
+2026-04-14 16:24:22,564 [INFO] aiogram.event: Update id=34750369 is not handled. Duration 2 ms by bot id=8628385358
+2026-04-14 16:25:14,692 [INFO] aiogram.event: Update id=34750370 is handled. Duration 310 ms by bot id=8628385358
+2026-04-14 16:25:28,385 [INFO] aiogram.event: Update id=34750371 is handled. Duration 119 ms by bot id=8628385358
+2026-04-14 16:25:30,824 [INFO] aiogram.event: Update id=34750372 is handled. Duration 129 ms by bot id=8628385358
+2026-04-14 16:25:37,550 [INFO] aiogram.event: Update id=34750373 is handled. Duration 136 ms by bot id=8628385358
+2026-04-14 16:25:41,924 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 16:25:43,350 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 16:25:43,351 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:25:43,352 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:25:43,352 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:25:43,477 [INFO] aiogram.event: Update id=34750374 is handled. Duration 1660 ms by bot id=8628385358
+2026-04-14 16:25:58,132 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 16:26:02,750 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 16:26:02,750 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:26:02,750 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:26:02,751 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:26:02,899 [INFO] aiogram.event: Update id=34750375 is handled. Duration 4874 ms by bot id=8628385358
+2026-04-14 16:26:32,861 [INFO] aiogram.event: Update id=34750376 is handled. Duration 313 ms by bot id=8628385358
+2026-04-14 16:26:33,940 [INFO] aiogram.event: Update id=34750377 is handled. Duration 120 ms by bot id=8628385358
+2026-04-14 16:26:36,453 [INFO] aiogram.event: Update id=34750378 is handled. Duration 126 ms by bot id=8628385358
+2026-04-14 16:26:41,414 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 16:26:43,026 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 16:26:43,027 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:26:43,027 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:26:43,027 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:26:43,145 [INFO] aiogram.event: Update id=34750379 is handled. Duration 1840 ms by bot id=8628385358
+2026-04-14 16:26:50,749 [INFO] aiogram.event: Update id=34750380 is handled. Duration 118 ms by bot id=8628385358
+2026-04-14 16:28:54,413 [INFO] aiogram.event: Update id=34750381 is handled. Duration 316 ms by bot id=8628385358
+2026-04-14 16:28:57,946 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 16:28:59,813 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 16:28:59,814 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:28:59,814 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:28:59,814 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:28:59,936 [INFO] aiogram.event: Update id=34750382 is handled. Duration 2099 ms by bot id=8628385358
+2026-04-14 16:29:08,247 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 16:29:12,766 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 16:29:12,767 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:29:12,768 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:29:12,768 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 16:29:12,943 [INFO] aiogram.event: Update id=34750383 is handled. Duration 4806 ms by bot id=8628385358
+2026-04-14 16:29:54,938 [INFO] aiogram.event: Update id=34750384 is handled. Duration 324 ms by bot id=8628385358
+2026-04-14 16:30:43,212 [INFO] aiogram.event: Update id=34750385 is handled. Duration 312 ms by bot id=8628385358
+2026-04-14 16:30:44,216 [INFO] aiogram.event: Update id=34750386 is handled. Duration 114 ms by bot id=8628385358
+2026-04-14 16:30:46,482 [INFO] aiogram.event: Update id=34750387 is handled. Duration 138 ms by bot id=8628385358
+2026-04-14 16:30:50,164 [INFO] aiogram.event: Update id=34750388 is handled. Duration 115 ms by bot id=8628385358
+2026-04-14 16:30:52,865 [INFO] aiogram.event: Update id=34750389 is handled. Duration 117 ms by bot id=8628385358
+2026-04-14 16:30:58,338 [INFO] aiogram.event: Update id=34750390 is handled. Duration 117 ms by bot id=8628385358
+2026-04-14 16:31:04,283 [INFO] aiogram.event: Update id=34750391 is handled. Duration 167 ms by bot id=8628385358
+2026-04-14 16:35:23,385 [INFO] aiogram.event: Update id=34750392 is handled. Duration 413 ms by bot id=8628385358
+2026-04-14 16:35:28,269 [INFO] aiogram.event: Update id=34750393 is handled. Duration 133 ms by bot id=8628385358
+2026-04-14 16:35:37,007 [INFO] aiogram.event: Update id=34750394 is handled. Duration 255 ms by bot id=8628385358
+2026-04-14 16:35:44,033 [INFO] aiogram.event: Update id=34750395 is handled. Duration 251 ms by bot id=8628385358
+2026-04-14 16:35:50,056 [INFO] aiogram.event: Update id=34750396 is handled. Duration 134 ms by bot id=8628385358
+2026-04-14 16:35:55,660 [INFO] aiogram.event: Update id=34750397 is handled. Duration 132 ms by bot id=8628385358
+2026-04-14 16:36:02,333 [INFO] aiogram.event: Update id=34750398 is handled. Duration 131 ms by bot id=8628385358
+2026-04-14 16:36:06,621 [INFO] aiogram.event: Update id=34750399 is handled. Duration 145 ms by bot id=8628385358
+2026-04-14 16:36:13,933 [INFO] aiogram.event: Update id=34750400 is handled. Duration 135 ms by bot id=8628385358
+2026-04-14 16:36:24,387 [INFO] aiogram.event: Update id=34750401 is handled. Duration 167 ms by bot id=8628385358
+2026-04-14 16:36:37,770 [INFO] aiogram.event: Update id=34750402 is handled. Duration 270 ms by bot id=8628385358
+2026-04-14 16:36:40,857 [INFO] aiogram.event: Update id=34750403 is handled. Duration 141 ms by bot id=8628385358
+2026-04-14 16:37:02,600 [INFO] aiogram.event: Update id=34750404 is handled. Duration 337 ms by bot id=8628385358
+2026-04-14 16:56:32,464 [INFO] aiogram.event: Update id=34750405 is handled. Duration 321 ms by bot id=8628385358
+2026-04-14 17:52:52,763 [INFO] aiogram.event: Update id=34750406 is handled. Duration 345 ms by bot id=8628385358
+2026-04-14 17:52:54,726 [INFO] aiogram.event: Update id=34750407 is handled. Duration 121 ms by bot id=8628385358
+2026-04-14 17:53:01,019 [INFO] aiogram.event: Update id=34750408 is handled. Duration 128 ms by bot id=8628385358
+2026-04-14 17:53:02,646 [INFO] aiogram.event: Update id=34750409 is handled. Duration 168 ms by bot id=8628385358
+2026-04-14 17:53:03,862 [INFO] aiogram.event: Update id=34750410 is handled. Duration 123 ms by bot id=8628385358
+2026-04-14 17:53:06,301 [INFO] aiogram.event: Update id=34750411 is handled. Duration 131 ms by bot id=8628385358
+2026-04-14 17:53:07,847 [INFO] aiogram.event: Update id=34750412 is handled. Duration 130 ms by bot id=8628385358
+2026-04-14 17:53:09,422 [INFO] aiogram.event: Update id=34750413 is handled. Duration 231 ms by bot id=8628385358
+2026-04-14 17:53:11,213 [INFO] aiogram.event: Update id=34750414 is handled. Duration 238 ms by bot id=8628385358
+2026-04-14 17:53:14,218 [INFO] aiogram.event: Update id=34750415 is handled. Duration 118 ms by bot id=8628385358
+2026-04-14 17:53:17,722 [INFO] aiogram.event: Update id=34750416 is handled. Duration 235 ms by bot id=8628385358
+2026-04-14 17:53:21,339 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 17:53:23,279 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 17:53:23,280 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:53:23,280 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:53:23,280 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:53:23,409 [INFO] aiogram.event: Update id=34750417 is handled. Duration 2183 ms by bot id=8628385358
+2026-04-14 17:53:36,445 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 17:53:38,887 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 17:53:38,887 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:53:38,887 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:53:38,888 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:53:39,033 [INFO] aiogram.event: Update id=34750418 is handled. Duration 2753 ms by bot id=8628385358
+2026-04-14 17:54:03,862 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 17:54:14,341 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 17:54:14,342 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:54:14,342 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:54:14,342 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:54:14,467 [INFO] aiogram.event: Update id=34750419 is handled. Duration 10902 ms by bot id=8628385358
+2026-04-14 17:55:27,935 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 17:55:38,878 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 17:55:38,879 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:55:38,879 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:55:38,879 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:55:39,020 [INFO] aiogram.event: Update id=34750420 is handled. Duration 11418 ms by bot id=8628385358
+2026-04-14 17:56:03,313 [INFO] aiogram.event: Update id=34750421 is handled. Duration 306 ms by bot id=8628385358
+2026-04-14 17:56:10,546 [INFO] aiogram.event: Update id=34750422 is handled. Duration 121 ms by bot id=8628385358
+2026-04-14 17:56:13,034 [INFO] aiogram.event: Update id=34750423 is not handled. Duration 1 ms by bot id=8628385358
+2026-04-14 17:56:15,206 [INFO] aiogram.event: Update id=34750424 is handled. Duration 265 ms by bot id=8628385358
+2026-04-14 17:56:16,910 [INFO] aiogram.event: Update id=34750425 is handled. Duration 340 ms by bot id=8628385358
+2026-04-14 17:56:18,387 [INFO] aiogram.event: Update id=34750426 is handled. Duration 125 ms by bot id=8628385358
+2026-04-14 17:56:21,140 [INFO] google_genai.models: AFC is enabled with max remote calls: 10.
+2026-04-14 17:56:22,758 [INFO] httpx: HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent "HTTP/1.1 200 OK"
+2026-04-14 17:56:22,759 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:56:22,759 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:56:22,759 [WARNING] google_genai.types: Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-04-14 17:56:22,957 [INFO] aiogram.event: Update id=34750427 is handled. Duration 1970 ms by bot id=8628385358
+2026-04-14 17:56:30,273 [INFO] aiogram.event: Update id=34750428 is handled. Duration 174 ms by bot id=8628385358
+2026-04-14 17:56:38,805 [INFO] aiogram.event: Update id=34750429 is handled. Duration 125 ms by bot id=8628385358
+2026-04-14 17:59:09,864 [INFO] aiogram.event: Update id=34750430 is handled. Duration 346 ms by bot id=8628385358
+2026-04-14 17:59:21,117 [INFO] aiogram.event: Update id=34750431 is handled. Duration 152 ms by bot id=8628385358
+2026-04-14 18:01:01,080 [INFO] aiogram.event: Update id=34750432 is handled. Duration 347 ms by bot id=8628385358
+2026-04-14 18:01:05,879 [INFO] aiogram.event: Update id=34750433 is handled. Duration 145 ms by bot id=8628385358
+2026-04-14 18:01:14,778 [INFO] aiogram.event: Update id=34750434 is handled. Duration 125 ms by bot id=8628385358
+2026-04-14 18:01:16,360 [INFO] aiogram.event: Update id=34750435 is handled. Duration 133 ms by bot id=8628385358
+2026-04-14 18:01:19,356 [INFO] aiogram.event: Update id=34750436 is handled. Duration 126 ms by bot id=8628385358
+2026-04-14 18:01:23,676 [INFO] aiogram.event: Update id=34750437 is handled. Duration 144 ms by bot id=8628385358
+2026-04-14 18:01:28,434 [INFO] aiogram.event: Update id=34750438 is handled. Duration 127 ms by bot id=8628385358
+2026-04-14 18:01:53,917 [INFO] aiogram.event: Update id=34750439 is handled. Duration 321 ms by bot id=8628385358
+2026-04-14 18:01:58,550 [INFO] aiogram.event: Update id=34750440 is handled. Duration 159 ms by bot id=8628385358
+2026-04-14 18:02:03,104 [INFO] aiogram.event: Update id=34750441 is handled. Duration 190 ms by bot id=8628385358
+2026-04-14 18:02:11,112 [INFO] aiogram.event: Update id=34750442 is handled. Duration 136 ms by bot id=8628385358
+2026-04-14 18:02:14,317 [INFO] aiogram.event: Update id=34750443 is handled. Duration 122 ms by bot id=8628385358
+2026-04-14 18:05:32,001 [INFO] aiogram.event: Update id=34750444 is handled. Duration 394 ms by bot id=8628385358
+2026-04-14 18:05:51,055 [INFO] aiogram.event: Update id=34750445 is handled. Duration 309 ms by bot id=8628385358
+2026-04-14 18:06:00,184 [INFO] aiogram.event: Update id=34750446 is handled. Duration 140 ms by bot id=8628385358
+2026-04-14 18:06:01,938 [INFO] aiogram.event: Update id=34750447 is handled. Duration 222 ms by bot id=8628385358
+2026-04-14 18:06:20,604 [INFO] aiogram.event: Update id=34750448 is handled. Duration 521 ms by bot id=8628385358
+2026-04-14 18:06:25,477 [INFO] aiogram.event: Update id=34750449 is handled. Duration 136 ms by bot id=8628385358
+2026-04-14 18:06:27,024 [INFO] aiogram.event: Update id=34750450 is handled. Duration 139 ms by bot id=8628385358
+2026-04-14 18:06:37,636 [INFO] aiogram.event: Update id=34750451 is not handled. Duration 4 ms by bot id=8628385358
+2026-04-14 18:06:39,547 [INFO] aiogram.event: Update id=34750452 is not handled. Duration 5 ms by bot id=8628385358
+2026-04-14 18:06:40,536 [INFO] aiogram.event: Update id=34750453 is not handled. Duration 3 ms by bot id=8628385358
+2026-04-14 18:06:44,793 [INFO] aiogram.event: Update id=34750454 is handled. Duration 337 ms by bot id=8628385358
+2026-04-14 18:06:46,624 [INFO] aiogram.event: Update id=34750455 is handled. Duration 138 ms by bot id=8628385358
+2026-04-14 18:06:47,930 [INFO] aiogram.event: Update id=34750456 is handled. Duration 240 ms by bot id=8628385358
+2026-04-14 18:06:50,348 [INFO] aiogram.event: Update id=34750457 is handled. Duration 253 ms by bot id=8628385358
+2026-04-14 18:06:52,986 [INFO] aiogram.event: Update id=34750458 is handled. Duration 361 ms by bot id=8628385358
+2026-04-14 18:06:54,430 [INFO] aiogram.event: Update id=34750459 is handled. Duration 577 ms by bot id=8628385358
+2026-04-14 18:07:02,761 [INFO] aiogram.event: Update id=34750460 is handled. Duration 127 ms by bot id=8628385358
+2026-04-14 18:07:21,002 [INFO] aiogram.event: Update id=34750461 is handled. Duration 311 ms by bot id=8628385358
+2026-04-14 18:07:28,226 [INFO] aiogram.event: Update id=34750462 is handled. Duration 184 ms by bot id=8628385358
+2026-04-14 18:07:33,359 [INFO] aiogram.event: Update id=34750463 is handled. Duration 126 ms by bot id=8628385358
+2026-04-14 18:07:38,297 [INFO] aiogram.event: Update id=34750464 is handled. Duration 129 ms by bot id=8628385358
+2026-04-14 18:07:42,497 [INFO] aiogram.event: Update id=34750465 is handled. Duration 238 ms by bot id=8628385358
+2026-04-14 18:07:52,312 [INFO] aiogram.event: Update id=34750466 is handled. Duration 180 ms by bot id=8628385358
+2026-04-14 18:07:54,192 [INFO] aiogram.event: Update id=34750467 is handled. Duration 223 ms by bot id=8628385358
+2026-04-14 18:07:57,435 [INFO] aiogram.event: Update id=34750468 is handled. Duration 243 ms by bot id=8628385358
+2026-04-14 18:08:08,158 [INFO] aiogram.event: Update id=34750469 is handled. Duration 125 ms by bot id=8628385358
+2026-04-14 18:08:12,943 [INFO] aiogram.event: Update id=34750470 is handled. Duration 209 ms by bot id=8628385358
+2026-04-14 18:08:32,733 [INFO] aiogram.event: Update id=34750471 is handled. Duration 329 ms by bot id=8628385358
+2026-04-14 18:08:42,713 [INFO] aiogram.event: Update id=34750472 is handled. Duration 138 ms by bot id=8628385358
+2026-04-14 18:08:46,003 [INFO] aiogram.event: Update id=34750473 is handled. Duration 201 ms by bot id=8628385358
+2026-04-14 18:08:50,545 [INFO] aiogram.event: Update id=34750474 is handled. Duration 171 ms by bot id=8628385358
+2026-04-14 18:08:53,469 [INFO] aiogram.event: Update id=34750475 is handled. Duration 127 ms by bot id=8628385358
+2026-04-14 18:08:54,914 [INFO] aiogram.event: Update id=34750476 is handled. Duration 123 ms by bot id=8628385358
+2026-04-14 18:08:58,913 [INFO] aiogram.event: Update id=34750477 is handled. Duration 123 ms by bot id=8628385358
+2026-04-14 18:09:00,459 [INFO] aiogram.event: Update id=34750478 is handled. Duration 226 ms by bot id=8628385358
+2026-04-14 18:09:03,573 [INFO] aiogram.event: Update id=34750479 is handled. Duration 249 ms by bot id=8628385358
+2026-04-14 18:09:07,018 [INFO] aiogram.event: Update id=34750480 is handled. Duration 132 ms by bot id=8628385358
+2026-04-14 18:09:10,662 [INFO] aiogram.event: Update id=34750481 is handled. Duration 158 ms by bot id=8628385358
+2026-04-14 18:09:16,837 [INFO] aiogram.event: Update id=34750482 is not handled. Duration 1 ms by bot id=8628385358
+2026-04-14 18:09:16,837 [ERROR] aiogram.event: Cause exception while process update id=34750482 by bot id=8628385358
+AttributeError: 'NoneType' object has no attribute 'strip'
+Traceback (most recent call last):
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/middlewares/user_context.py", line 49, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/fsm/middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 170, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/middlewares/throttling.py", line 31, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/.venv/lib/python3.12/site-packages/aiogram/dispatcher/event/handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/jenetteg/Desktop/xizmat_bot/handlers/orders.py", line 154, in comment_entered
+    comment = None if message.text == "⏭ O'tkazib yuborish" else message.text.strip()
+                                                                 ^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'strip'
+2026-04-14 18:09:45,116 [INFO] aiogram.event: Update id=34750483 is handled. Duration 322 ms by bot id=8628385358
+2026-04-14 18:09:51,969 [INFO] aiogram.event: Update id=34750484 is handled. Duration 125 ms by bot id=8628385358
+2026-04-14 18:09:58,189 [ERROR] handlers.orders: Admin 8248223032 ga yuborishda xato: Telegram server says - Bad Request: can't use file of type Photo as Document
+2026-04-14 18:09:58,189 [INFO] handlers.orders: ✅ Yangi buyurtma #1 — Lorhdh
+2026-04-14 18:09:58,189 [INFO] aiogram.event: Update id=34750485 is handled. Duration 277 ms by bot id=8628385358
+2026-04-14 18:10:27,883 [INFO] aiogram.event: Update id=34750486 is not handled. Duration 2 ms by bot id=8628385358
+2026-04-14 18:10:42,171 [INFO] aiogram.event: Update id=34750487 is not handled. Duration 1 ms by bot id=8628385358
+2026-04-14 18:10:44,173 [INFO] aiogram.event: Update id=34750488 is handled. Duration 632 ms by bot id=8628385358
+2026-04-14 18:10:51,516 [INFO] aiogram.event: Update id=34750489 is handled. Duration 305 ms by bot id=8628385358
+2026-04-14 18:10:56,833 [INFO] aiogram.event: Update id=34750490 is handled. Duration 132 ms by bot id=8628385358
+2026-04-14 18:10:58,409 [INFO] aiogram.event: Update id=34750491 is handled. Duration 132 ms by bot id=8628385358
+2026-04-14 18:11:03,952 [INFO] aiogram.event: Update id=34750492 is handled. Duration 409 ms by bot id=8628385358
+2026-04-14 18:11:16,232 [INFO] aiogram.event: Update id=34750493 is handled. Duration 246 ms by bot id=8628385358
+2026-04-14 18:11:37,438 [INFO] aiogram.event: Update id=34750494 is handled. Duration 871 ms by bot id=8628385358
+2026-04-14 18:15:43,567 [INFO] aiogram.event: Update id=34750495 is handled. Duration 308 ms by bot id=8628385358
+2026-04-14 18:15:51,746 [INFO] aiogram.event: Update id=34750496 is handled. Duration 113 ms by bot id=8628385358
+2026-04-14 18:16:00,406 [INFO] aiogram.event: Update id=34750497 is handled. Duration 206 ms by bot id=8628385358
+2026-04-14 18:16:03,241 [INFO] aiogram.event: Update id=34750498 is handled. Duration 276 ms by bot id=8628385358
+2026-04-14 18:16:04,912 [INFO] aiogram.event: Update id=34750499 is handled. Duration 113 ms by bot id=8628385358
+2026-04-14 18:22:47,455 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2026-04-14 18:22:47,455 [INFO] aiogram.dispatcher: Polling stopped for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 18:22:47,455 [INFO] aiogram.dispatcher: Polling stopped
+2026-04-14 18:22:59,388 [INFO] __main__: ✅ Ma'lumotlar bazasi tayyor
+2026-04-14 18:22:59,430 [INFO] __main__: ✅ Gemini AI ulandi
+2026-04-14 18:22:59,871 [INFO] __main__: 🚀 Bot polling boshlandi...
+2026-04-14 18:22:59,871 [INFO] aiogram.dispatcher: Start polling
+2026-04-14 18:22:59,979 [INFO] aiogram.dispatcher: Run polling for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 18:23:01,446 [WARNING] aiogram.dispatcher: Received SIGINT signal
+2026-04-14 18:23:01,447 [INFO] aiogram.dispatcher: Polling stopped for bot @xizmatbot_uz_bot id=8628385358 - 'XizmatBot | Xizmatlar va Buyurtmalar'
+2026-04-14 18:23:01,447 [INFO] aiogram.dispatcher: Polling stopped
